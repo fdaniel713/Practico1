@@ -24,7 +24,7 @@ let iso = 'ARG'
 //let Idioma = 'ja'
 
 const isoConTraduccion = countries.find (isos => isos.iso3 === iso)
-console.log(isoConTraduccion.translations.ja);
+console.log('la traduccion es: '+ isoConTraduccion.translations.ja);
 
 
 
@@ -36,6 +36,12 @@ console.log(isoConTraduccion.translations.ja);
  */
 function getCountriesBySubregion(subregion){
     //Complete with your code
+
+    let subRegion = 'South America';
+   
+   const    buscarRegion = countries.filter (subRegions => subRegions.subregion === subRegion)
+   console.log(buscarRegion);
+   
 }
 
 function main() {
