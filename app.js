@@ -20,6 +20,14 @@ console.log(resultado);
  * @returns {string}
  */
 function getCountryTranslatedName(isoCode, language){
+let iso = 'ARG'
+//let Idioma = 'ja'
+
+const isoConTraduccion = countries.find (isos => isos.iso3 === iso)
+console.log(isoConTraduccion.translations.ja);
+
+
+
     //Complete with your code
 }
 /**Get an array of all the countries with the specified subregion
@@ -31,7 +39,7 @@ function getCountriesBySubregion(subregion){
 }
 
 function main() {
-    console.log(
+   console.log(
         '///// Ejercicio 1 /////\n',
         getCountryByIso3('ARG'),
         '\n');
